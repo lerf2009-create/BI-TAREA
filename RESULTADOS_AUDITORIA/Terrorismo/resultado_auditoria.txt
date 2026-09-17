@@ -1,0 +1,115 @@
+======================================================================
+AUDITORÍA — Terrorismo
+======================================================================
+
+PASO 1 — DESCARGA Y REGISTRO DE LA FUENTE
+--------------------------------------------
+Archivo: 1Reporte_Delito_Terrorismo_Policía_Nacional_2019 A 2025.xlsx
+Ruta: C:\Users\lerf2\OneDrive\Escritorio\BI TAREA\1Reporte_Delito_Terrorismo_Policía_Nacional_2019 A 2025.xlsx
+Fecha de auditoría/registro: 2026-09-04 12:07
+Formato: .xlsx
+Tamaño (MB): 0.08
+Filas antes de modificaciones: 2109
+Columnas: 6
+
+PASO 2 — EXPLORACIÓN INICIAL DE LA ESTRUCTURA
+-----------------------------------------------
+Columnas exactas:
+- Departamento
+- Municipio
+- CODIGO DANE
+- ARMAS MEDIOS
+- FECHA HECHO
+- CANTIDAD
+
+Tipos de datos:
+Departamento    object
+Municipio       object
+CODIGO DANE      int64
+ARMAS MEDIOS    object
+FECHA HECHO     object
+CANTIDAD         int64
+
+Primeras 5 filas:
+      Departamento   Municipio  CODIGO DANE  ARMAS MEDIOS FECHA HECHO  CANTIDAD
+         ANTIOQUIA      Tarazá      5790000 ARMA DE FUEGO  20/02/2019         1
+         ANTIOQUIA      Tarazá      5790000 ARMA DE FUEGO  18/02/2019         1
+NORTE DE SANTANDER Cúcuta (CT)     54001000 ARMA DE FUEGO  25/03/2019         1
+            ARAUCA    Saravena     81736000 ARMA DE FUEGO  28/02/2019         1
+         ANTIOQUIA    Valdivia      5854000 ARMA DE FUEGO  18/03/2019         1
+
+Columnas que requieren revisión mediante diccionario:
+- CODIGO DANE
+- ARMAS MEDIOS
+
+Encabezados: se encuentran en la primera fila del archivo.
+Separador decimal/miles: se revisa según el tipo cargado; las columnas numéricas se almacenan como números.
+
+PASO 3 — DIAGNÓSTICO DE COMPLETITUD
+------------------------------------
+Nulos por columna:
+- Departamento: 0 (0.00%)
+- Municipio: 0 (0.00%)
+- CODIGO DANE: 0 (0.00%)
+- ARMAS MEDIOS: 0 (0.00%)
+- FECHA HECHO: 0 (0.00%)
+- CANTIDAD: 0 (0.00%)
+
+Columna de fecha: FECHA HECHO
+Fechas no interpretables: 0
+Años disponibles: [2019, 2020, 2021, 2022, 2023, 2024, 2025]
+Meses disponibles por año:
+- 2019: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+- 2020: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+- 2021: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+- 2022: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+- 2023: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+- 2024: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+- 2025: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+
+Departamentos únicos (Departamento): 30
+Municipios/códigos únicos (CODIGO DANE): 385
+
+PASO 4 — DIAGNÓSTICO DE EXACTITUD Y VALIDEZ
+---------------------------------------------
+Valores negativos en CANTIDAD: 0
+Máximo en CANTIDAD: 1
+Fechas no interpretables: 0
+Fecha mínima: 2019-01-05 00:00:00
+Fecha máxima: 2025-12-27 00:00:00
+Fechas fuera de 2019–2025: 0
+
+Longitud de códigos:
+CODIGO DANE
+7     540
+8    1569
+
+PASO 5 — DIAGNÓSTICO DE CONSISTENCIA
+-------------------------------------
+5.1 Comparación con DIVIPOLA: no aplica con la estructura actual.
+5.2 Consistencia interna de nombres: no aplica o requiere regla específica.
+
+5.3 Coherencia de agregaciones:
+Diferencias año-departamento: 0
+Diferencias año-municipio: 0
+
+PASO 6 — DIAGNÓSTICO DE UNICIDAD
+---------------------------------
+Filas involucradas en duplicados exactos: 236
+Porcentaje: 11.19%
+Combinaciones exactas duplicadas: 98
+Filas involucradas en duplicados lógicos: 365
+Porcentaje: 17.31%
+Combinaciones lógicas duplicadas: 150
+Cantidad total: 2109
+Cantidad en filas duplicadas exactas: 236
+Porcentaje sobre el total: 11.19%
+
+PASO 7 — DIAGNÓSTICO DE OPORTUNIDAD
+------------------------------------
+Primera fecha disponible: 2019-01-05 00:00:00
+Última fecha disponible: 2025-12-27 00:00:00
+Fecha de auditoría: 2026-09-04
+Rezago aproximado: 9 meses
+2025 disponible: True
+Frecuencia documentada para estas fuentes de Estadística Delictiva: mensual.

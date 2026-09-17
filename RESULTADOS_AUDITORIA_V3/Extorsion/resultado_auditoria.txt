@@ -1,0 +1,105 @@
+======================================================================
+AUDITORÍA — Extorsion
+======================================================================
+
+PASO 1 — DESCARGA Y REGISTRO
+Archivo: 3EXTORSIÓN_20260904.xlsx
+Ruta: C:\Users\lerf2\OneDrive\Escritorio\BI TAREA\3EXTORSIÓN_20260904.xlsx
+Fecha de auditoría/registro: 2026-09-04 12:13
+Formato: .xlsx
+Tamaño (MB): 2.17
+Filas antes de modificación: 72955
+Columnas: 6
+
+PASO 2 — EXPLORACIÓN
+Columnas exactas:
+- FECHA HECHO
+- COD_DEPTO
+- DEPARTAMENTO
+- COD_MUNI
+- MUNICIPIO
+- CANTIDAD
+
+Tipos:
+FECHA HECHO     datetime64[ns]
+COD_DEPTO                int64
+DEPARTAMENTO            object
+COD_MUNI                 int64
+MUNICIPIO               object
+CANTIDAD                 int64
+
+Primeras 5 filas:
+FECHA HECHO  COD_DEPTO DEPARTAMENTO  COD_MUNI MUNICIPIO  CANTIDAD
+ 2019-01-02          5    ANTIOQUIA      5154  CAUCASIA         1
+ 2019-01-02          5    ANTIOQUIA      5088     BELLO         1
+ 2019-01-02         27        CHOCO     27001    QUIBDO         1
+ 2019-01-02         52       NARIÑO     52678 SAMANIEGO         1
+ 2019-01-02          5    ANTIOQUIA      5887   YARUMAL         1
+
+Variables que requieren diccionario:
+- COD_DEPTO
+- COD_MUNI
+Encabezados: primera fila.
+
+PASO 3 — COMPLETITUD
+- FECHA HECHO: 0 (0.00%)
+- COD_DEPTO: 0 (0.00%)
+- DEPARTAMENTO: 0 (0.00%)
+- COD_MUNI: 0 (0.00%)
+- MUNICIPIO: 0 (0.00%)
+- CANTIDAD: 0 (0.00%)
+Fechas no interpretables: 0
+Años: [np.int32(2019), np.int32(2020), np.int32(2021), np.int32(2022), np.int32(2023), np.int32(2024), np.int32(2025)]
+- 2019: [np.int32(1), np.int32(2), np.int32(3), np.int32(4), np.int32(5), np.int32(6), np.int32(7), np.int32(8), np.int32(9), np.int32(10), np.int32(11), np.int32(12)]
+- 2020: [np.int32(1), np.int32(2), np.int32(3), np.int32(4), np.int32(5), np.int32(6), np.int32(7), np.int32(8), np.int32(9), np.int32(10), np.int32(11), np.int32(12)]
+- 2021: [np.int32(1), np.int32(2), np.int32(3), np.int32(4), np.int32(5), np.int32(6), np.int32(7), np.int32(8), np.int32(9), np.int32(10), np.int32(11), np.int32(12)]
+- 2022: [np.int32(1), np.int32(2), np.int32(3), np.int32(4), np.int32(5), np.int32(6), np.int32(7), np.int32(8), np.int32(9), np.int32(10), np.int32(11), np.int32(12)]
+- 2023: [np.int32(1), np.int32(2), np.int32(3), np.int32(4), np.int32(5), np.int32(6), np.int32(7), np.int32(8), np.int32(9), np.int32(10), np.int32(11), np.int32(12)]
+- 2024: [np.int32(1), np.int32(2), np.int32(3), np.int32(4), np.int32(5), np.int32(6), np.int32(7), np.int32(8), np.int32(9), np.int32(10), np.int32(11), np.int32(12)]
+- 2025: [np.int32(1), np.int32(2), np.int32(3), np.int32(4), np.int32(5), np.int32(6), np.int32(7), np.int32(8), np.int32(9), np.int32(10), np.int32(11), np.int32(12)]
+Departamentos únicos: 33
+Municipios/códigos únicos: 1053
+
+PASO 4 — EXACTITUD Y VALIDEZ
+Valores negativos en CANTIDAD: 0
+Valores no numéricos en CANTIDAD: 0
+Máximo CANTIDAD: 1
+Fecha mínima: 2019-01-02 00:00:00
+Fecha máxima: 2025-12-31 00:00:00
+Fechas fuera de 2019–2025: 0
+Longitud de código almacenado:
+COD_MUNI
+4    17215
+5    55740
+Códigos municipales no encontrados en DIVIPOLA: 0
+
+PASO 5 — CONSISTENCIA
+Códigos no encontrados en DIVIPOLA: 0
+Registros con diferencia de denominación: 16884 (23.14%)
+Diferencias de denominación por código:
+_COD5        MUNICIPIO   Nombre Municipio
+76001             CALI   SANTIAGO DE CALI
+11001      BOGOTA D.C.       BOGOTÁ, D.C.
+54001           CUCUTA SAN JOSÉ DE CÚCUTA
+19760 SOTARA PAISPAMBA SOTARÁ - PAISPAMBA
+Códigos con más de un nombre dentro de la fuente: 0
+Diferencias año-departamento: 0
+Diferencias año-municipio/código: 0
+
+PASO 6 — UNICIDAD
+Filas involucradas en duplicados exactos: 31819
+Porcentaje: 43.61%
+Combinaciones exactas duplicadas: 9899
+Filas involucradas en duplicados lógicos: 31819
+Porcentaje: 43.61%
+Combinaciones lógicas duplicadas: 9899
+Cantidad total: 72955
+Cantidad en filas duplicadas exactas: 31819
+Porcentaje de cantidad: 43.61%
+
+PASO 7 — OPORTUNIDAD
+Primera fecha: 2019-01-02 00:00:00
+Última fecha: 2025-12-31 00:00:00
+Rezago aproximado: 9 meses
+2025 disponible: True
+Frecuencia documentada: mensual para Estadística Delictiva.

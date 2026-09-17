@@ -1,0 +1,7 @@
+﻿Columna,Tipo físico,Tipo según Python,Valores únicos,Nulos
+Departamento,object,texto,30,0
+Municipio,object,texto,341,0
+CODIGO DANE,int64,número,385,0
+ARMAS MEDIOS,object,texto,21,0
+FECHA HECHO,object,texto,1155,0
+CANTIDAD,int64,número,1,0

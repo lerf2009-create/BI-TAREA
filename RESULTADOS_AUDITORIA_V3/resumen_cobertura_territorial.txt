@@ -1,0 +1,8 @@
+======================================================================
+5.4 — COBERTURA TERRITORIAL ENTRE FUENTES DE DELITOS
+======================================================================
+Homicidios vs Secuestro: comunes=346; solo Homicidios=703; solo Secuestro=1
+Homicidios vs Extorsion: comunes=1011; solo Homicidios=38; solo Extorsion=42
+Homicidios vs Terrorismo: comunes=349; solo Homicidios=700; solo Terrorismo=1
+
+Nota: diferencias de cobertura no se interpretan automáticamente como errores ni como ceros. Pueden obedecer a la naturaleza del delito, cobertura territorial o estructura de la fuente.

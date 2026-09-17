@@ -1,0 +1,144 @@
+======================================================================
+AUDITORÍA — Coca
+======================================================================
+
+PASO 1 — DESCARGA Y REGISTRO DE LA FUENTE
+--------------------------------------------
+Archivo: 4Detección_de_Cultivos_de_Coca_(hectáreas)_20260903.xlsx
+Ruta: C:\Users\lerf2\OneDrive\Escritorio\BI TAREA\4Detección_de_Cultivos_de_Coca_(hectáreas)_20260903.xlsx
+Fecha de auditoría/registro: 2026-09-04 12:07
+Formato: .xlsx
+Tamaño (MB): 0.04
+Filas antes de modificaciones: 319
+Columnas: 28
+
+PASO 2 — EXPLORACIÓN INICIAL DE LA ESTRUCTURA
+-----------------------------------------------
+Columnas exactas:
+- CODDEPTO
+- DEPARTAMENTO
+- CODMPIO
+- MUNICIPIO
+- 2001
+- 2002
+- 2003
+- 2004
+- 2005
+- 2006
+- 2007
+- 2008
+- 2009
+- 2010
+- 2011
+- 2012
+- 2013
+- 2014
+- 2015
+- 2016
+- 2017
+- 2018
+- 2019
+- 2020
+- 2021
+- 2022
+- 2023
+- 2024
+
+Tipos de datos:
+CODDEPTO          int64
+DEPARTAMENTO     object
+CODMPIO           int64
+MUNICIPIO        object
+2001            float64
+2002            float64
+2003            float64
+2004            float64
+2005            float64
+2006            float64
+2007            float64
+2008            float64
+2009            float64
+2010            float64
+2011            float64
+2012            float64
+2013            float64
+2014            float64
+2015            float64
+2016            float64
+2017            float64
+2018            float64
+2019            float64
+2020            float64
+2021            float64
+2022            float64
+2023            float64
+2024            float64
+
+Primeras 5 filas:
+ CODDEPTO DEPARTAMENTO  CODMPIO                                      MUNICIPIO   2001  2002   2003  2004  2005  2006  2007  2008  2009  2010  2011  2012  2013  2014  2015  2016  2017  2018  2019  2020  2021  2022  2023  2024
+       91     AMAZONAS    91263                EL ENCANTO (Cor. Departamental) 191.82 264.0 164.00 270.0 382.0 233.0 186.0 349.0 109.0  81.0  35.0  16.0   8.0  20.0 11.77 12.65  8.04  4.12  2.52   NaN   NaN   NaN   NaN   NaN
+       91     AMAZONAS    91405               LA CHORRERA (Cor. Departamental)  65.00 236.0 209.00 271.0 257.0 223.0 132.0 349.0  81.0 113.0  36.0  22.0  25.0  51.0 13.61 14.09 18.20  6.04  3.16   NaN   NaN   NaN   NaN   NaN
+       91     AMAZONAS    91407                LA PEDRERA (Cor. Departamental)    NaN   NaN    NaN   NaN   NaN   NaN   NaN   NaN   7.0  12.0   NaN   1.0   NaN   NaN   NaN   NaN   NaN   NaN   NaN   NaN   NaN   NaN   NaN   NaN
+       91     AMAZONAS    91430       LA VICTORIA (Pacoa) (Cor. Departamental)    NaN   NaN    NaN   NaN   NaN   NaN   NaN   NaN   2.0  10.0   NaN   NaN   NaN   NaN   NaN   NaN   NaN   NaN   NaN   NaN   NaN   NaN   NaN   NaN
+       91     AMAZONAS    91460 MIRITÍ-PARANÁ (Campoamor) (Cor. Departamental)   6.00  43.0  36.18  30.0  12.0   4.0   9.0   2.0   4.0  15.0   NaN   5.0   NaN   NaN   NaN   NaN   NaN   NaN   NaN   NaN   NaN   NaN   NaN   NaN
+
+Columnas que requieren revisión mediante diccionario:
+- CODDEPTO
+- CODMPIO
+
+Encabezados: se encuentran en la primera fila del archivo.
+Separador decimal/miles: se revisa según el tipo cargado; las columnas numéricas se almacenan como números.
+
+PASO 3 — DIAGNÓSTICO DE COMPLETITUD
+------------------------------------
+Nulos por columna:
+- CODDEPTO: 0 (0.00%)
+- DEPARTAMENTO: 0 (0.00%)
+- CODMPIO: 0 (0.00%)
+- MUNICIPIO: 0 (0.00%)
+- 2001: 155 (48.59%)
+- 2002: 151 (47.34%)
+- 2003: 130 (40.75%)
+- 2004: 129 (40.44%)
+- 2005: 129 (40.44%)
+- 2006: 120 (37.62%)
+- 2007: 124 (38.87%)
+- 2008: 113 (35.42%)
+- 2009: 102 (31.97%)
+- 2010: 112 (35.11%)
+- 2011: 114 (35.74%)
+- 2012: 107 (33.54%)
+- 2013: 116 (36.36%)
+- 2014: 115 (36.05%)
+- 2015: 127 (39.81%)
+- 2016: 136 (42.63%)
+- 2017: 133 (41.69%)
+- 2018: 132 (41.38%)
+- 2019: 143 (44.83%)
+- 2020: 147 (46.08%)
+- 2021: 138 (43.26%)
+- 2022: 134 (42.01%)
+- 2023: 138 (43.26%)
+- 2024: 139 (43.57%)
+
+Departamentos únicos (DEPARTAMENTO): 24
+
+PASO 4 — DIAGNÓSTICO DE EXACTITUD Y VALIDEZ
+---------------------------------------------
+
+PASO 5 — DIAGNÓSTICO DE CONSISTENCIA
+-------------------------------------
+5.1 Comparación con DIVIPOLA: no aplica con la estructura actual.
+5.2 Consistencia interna de nombres: no aplica o requiere regla específica.
+
+5.3 Coherencia de agregaciones: requiere estructura temporal y variable CANTIDAD.
+
+PASO 6 — DIAGNÓSTICO DE UNICIDAD
+---------------------------------
+Filas involucradas en duplicados exactos: 0
+Porcentaje: 0.00%
+Combinaciones exactas duplicadas: 0
+
+PASO 7 — DIAGNÓSTICO DE OPORTUNIDAD
+------------------------------------
+No aplica: la fuente no contiene una variable temporal utilizable.

@@ -1,0 +1,8 @@
+﻿Columna,Tipo físico,Tipo según Python,Valores únicos,Nulos
+Código Departamento,int64,número,33,0
+Nombre Departamento,object,texto,33,0
+Código Municipio,int64,número,1122,0
+Nombre Municipio,object,texto,1037,0
+Tipo: Municipio / Isla / Área no municipalizada,object,texto,3,0
+longitud,object,texto,1121,0
+Latitud,object,texto,1122,0

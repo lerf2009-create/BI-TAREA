@@ -1,0 +1,134 @@
+======================================================================
+AUDITORÍA — Terrorismo
+======================================================================
+
+PASO 1 — DESCARGA Y REGISTRO
+Archivo: 1Reporte_Delito_Terrorismo_Policía_Nacional_2019 A 2025.xlsx
+Ruta: C:\Users\lerf2\OneDrive\Escritorio\BI TAREA\1Reporte_Delito_Terrorismo_Policía_Nacional_2019 A 2025.xlsx
+Fecha de auditoría/registro: 2026-09-04 12:13
+Formato: .xlsx
+Tamaño (MB): 0.08
+Filas antes de modificación: 2109
+Columnas: 6
+
+PASO 2 — EXPLORACIÓN
+Columnas exactas:
+- Departamento
+- Municipio
+- CODIGO DANE
+- ARMAS MEDIOS
+- FECHA HECHO
+- CANTIDAD
+
+Tipos:
+Departamento    object
+Municipio       object
+CODIGO DANE      int64
+ARMAS MEDIOS    object
+FECHA HECHO     object
+CANTIDAD         int64
+
+Primeras 5 filas:
+      Departamento   Municipio  CODIGO DANE  ARMAS MEDIOS FECHA HECHO  CANTIDAD
+         ANTIOQUIA      Tarazá      5790000 ARMA DE FUEGO  20/02/2019         1
+         ANTIOQUIA      Tarazá      5790000 ARMA DE FUEGO  18/02/2019         1
+NORTE DE SANTANDER Cúcuta (CT)     54001000 ARMA DE FUEGO  25/03/2019         1
+            ARAUCA    Saravena     81736000 ARMA DE FUEGO  28/02/2019         1
+         ANTIOQUIA    Valdivia      5854000 ARMA DE FUEGO  18/03/2019         1
+
+Variables que requieren diccionario:
+- CODIGO DANE
+- ARMAS MEDIOS
+Encabezados: primera fila.
+
+PASO 3 — COMPLETITUD
+- Departamento: 0 (0.00%)
+- Municipio: 0 (0.00%)
+- CODIGO DANE: 0 (0.00%)
+- ARMAS MEDIOS: 0 (0.00%)
+- FECHA HECHO: 0 (0.00%)
+- CANTIDAD: 0 (0.00%)
+Fechas no interpretables: 0
+Años: [np.int32(2019), np.int32(2020), np.int32(2021), np.int32(2022), np.int32(2023), np.int32(2024), np.int32(2025)]
+- 2019: [np.int32(1), np.int32(2), np.int32(3), np.int32(4), np.int32(5), np.int32(6), np.int32(7), np.int32(8), np.int32(9), np.int32(10), np.int32(11), np.int32(12)]
+- 2020: [np.int32(1), np.int32(2), np.int32(3), np.int32(4), np.int32(5), np.int32(6), np.int32(7), np.int32(8), np.int32(9), np.int32(10), np.int32(11), np.int32(12)]
+- 2021: [np.int32(1), np.int32(2), np.int32(3), np.int32(4), np.int32(5), np.int32(6), np.int32(7), np.int32(8), np.int32(9), np.int32(10), np.int32(11), np.int32(12)]
+- 2022: [np.int32(1), np.int32(2), np.int32(3), np.int32(4), np.int32(5), np.int32(6), np.int32(7), np.int32(8), np.int32(9), np.int32(10), np.int32(11), np.int32(12)]
+- 2023: [np.int32(1), np.int32(2), np.int32(3), np.int32(4), np.int32(5), np.int32(6), np.int32(7), np.int32(8), np.int32(9), np.int32(10), np.int32(11), np.int32(12)]
+- 2024: [np.int32(1), np.int32(2), np.int32(3), np.int32(4), np.int32(5), np.int32(6), np.int32(7), np.int32(8), np.int32(9), np.int32(10), np.int32(11), np.int32(12)]
+- 2025: [np.int32(1), np.int32(2), np.int32(3), np.int32(4), np.int32(5), np.int32(6), np.int32(7), np.int32(8), np.int32(9), np.int32(10), np.int32(11), np.int32(12)]
+Departamentos únicos: 30
+Municipios/códigos únicos: 385
+
+PASO 4 — EXACTITUD Y VALIDEZ
+Valores negativos en CANTIDAD: 0
+Valores no numéricos en CANTIDAD: 0
+Máximo CANTIDAD: 1
+Fecha mínima: 2019-01-05 00:00:00
+Fecha máxima: 2025-12-27 00:00:00
+Fechas fuera de 2019–2025: 0
+Longitud de código almacenado:
+CODIGO DANE
+7     540
+8    1569
+Regla de validación territorial: CODIGO DANE // 1000 -> código municipal de 5 dígitos.
+Códigos derivados no encontrados en DIVIPOLA: 0
+
+PASO 5 — CONSISTENCIA
+Códigos derivados no encontrados en DIVIPOLA: 0
+Registros con diferencia de denominación: 373 (17.69%)
+Diferencias de denominación por código:
+_COD5                  Municipio          Nombre Municipio
+54001                Cúcuta (CT)        SAN JOSÉ DE CÚCUTA
+50001         Villavicencio (CT)             VILLAVICENCIO
+73001                Ibagué (CT)                    IBAGUÉ
+81001                Arauca (CT)                    ARAUCA
+11001           Bogotá D.C. (CT)              BOGOTÁ, D.C.
+19418                      López            LÓPEZ DE MICAY
+27001                Quibdó (CT)                    QUIBDÓ
+68001           Bucaramanga (CT)               BUCARAMANGA
+13001             Cartagena (CT)       CARTAGENA DE INDIAS
+19760                     Sotara        SOTARÁ - PAISPAMBA
+76001                  Cali (CT)          SANTIAGO DE CALI
+95001 San José del Guaviare (CT)     SAN JOSÉ DEL GUAVIARE
+44001              Riohacha (CT)                  RIOHACHA
+23001              Montería (CT)                  MONTERÍA
+70001             Sincelejo (CT)                 SINCELEJO
+20001            Valledupar (CT)                VALLEDUPAR
+52001                 Pasto (CT)                     PASTO
+05001              Medellín (CT)                  MEDELLÍN
+05042       Santafé de Antioquia     SANTA FÉ DE ANTIOQUIA
+05664                  San Pedro SAN PEDRO DE LOS MILAGROS
+41001                 Neiva (CT)                     NEIVA
+94001               Inírida (CT)                   INÍRIDA
+18001             Florencia (CT)                 FLORENCIA
+19001               Popayán (CT)                   POPAYÁN
+63001               Armenia (CT)                   ARMENIA
+17001             Manizales (CT)                 MANIZALES
+70823                 Tolú Viejo     SAN JOSÉ DE TOLUVIEJO
+05237                 Don Matías                 DONMATÍAS
+19548                   Piendamó          PIENDAMÓ - TUNÍA
+85001                 Yopal (CT)                     YOPAL
+15001                 Tunja (CT)                     TUNJA
+08001          Barranquilla (CT)              BARRANQUILLA
+47001           Santa Marta (CT)               SANTA MARTA
+Diferencias año-departamento: 0
+Diferencias año-municipio/código: 0
+
+PASO 6 — UNICIDAD
+Filas involucradas en duplicados exactos: 236
+Porcentaje: 11.19%
+Combinaciones exactas duplicadas: 98
+Filas involucradas en duplicados lógicos: 365
+Porcentaje: 17.31%
+Combinaciones lógicas duplicadas: 150
+Cantidad total: 2109
+Cantidad en filas duplicadas exactas: 236
+Porcentaje de cantidad: 11.19%
+
+PASO 7 — OPORTUNIDAD
+Primera fecha: 2019-01-05 00:00:00
+Última fecha: 2025-12-27 00:00:00
+Rezago aproximado: 9 meses
+2025 disponible: True
+Frecuencia documentada: mensual para Estadística Delictiva.

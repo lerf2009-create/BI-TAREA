@@ -1,0 +1,3 @@
+﻿Prueba,Campo,Resultado,Afectados,Porcentaje
+Filas completamente idénticas,Todas las columnas,31819 filas pertenecen a grupos duplicados,31819,43.61
+Duplicado lógico,código DANE + fecha + valor,72954 filas pertenecen a grupos potencialmente duplicados,72954,100.0

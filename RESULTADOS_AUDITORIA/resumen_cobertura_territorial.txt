@@ -1,0 +1,20 @@
+
+5.4 — COBERTURA TERRITORIAL ENTRE FUENTES DE DELITOS
+------------------------------------------------------
+Homicidios vs Secuestro:
+- Homicidios: 1049
+- Secuestro: 347
+- Municipios comunes: 346
+- Solo Homicidios: 703
+- Solo Secuestro: 1
+Homicidios vs Extorsion:
+- Homicidios: 1049
+- Extorsion: 1053
+- Municipios comunes: 1011
+- Solo Homicidios: 38
+- Solo Extorsion: 42
+Homicidios vs Terrorismo — comparación textual departamento + municipio:
+- Territorios Homicidios: 1049
+- Territorios Terrorismo: 350
+- Territorios comunes: 300
+- Solo Terrorismo: 50

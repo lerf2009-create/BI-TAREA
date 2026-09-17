@@ -1,0 +1,3 @@
+﻿Prueba,Campo,Resultado,Afectados,Porcentaje
+Años del período 2019–2025,Año/fecha,"Presentes: [np.int64(2019), np.int64(2020), np.int64(2021), np.int64(2022), np.int64(2023), np.int64(2024), np.int64(2025)]; faltantes: []",,
+Municipios únicos,CODIGO DANE,385 municipios/códigos únicos frente a 1.122 esperados,,

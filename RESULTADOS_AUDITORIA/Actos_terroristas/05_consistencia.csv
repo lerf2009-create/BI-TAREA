@@ -1,0 +1,3 @@
+﻿Prueba,Campo,Resultado,Afectados,Porcentaje
+Municipio/código DANE contra DIVIPOLA,CODIGO DANE,2109 registros con código no encontrado en DIVIPOLA,2109,100.0
+Un municipio aparece con nombres distintos,CODIGO DANE + Municipio,0 códigos presentan más de un nombre,0,

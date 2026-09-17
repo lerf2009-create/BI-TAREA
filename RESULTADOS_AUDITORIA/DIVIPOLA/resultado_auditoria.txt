@@ -1,0 +1,86 @@
+======================================================================
+AUDITORÍA — DIVIPOLA
+======================================================================
+
+PASO 1 — DESCARGA Y REGISTRO DE LA FUENTE
+--------------------------------------------
+Archivo: 5DIVIPOLA-_Códigos_municipios_20260903vf.xlsx
+Ruta: C:\Users\lerf2\OneDrive\Escritorio\BI TAREA\5DIVIPOLA-_Códigos_municipios_20260903vf.xlsx
+Fecha de auditoría/registro: 2026-09-04 12:07
+Formato: .xlsx
+Tamaño (MB): 0.07
+Filas antes de modificaciones: 1122
+Columnas: 7
+
+PASO 2 — EXPLORACIÓN INICIAL DE LA ESTRUCTURA
+-----------------------------------------------
+Columnas exactas:
+- Código Departamento
+- Nombre Departamento
+- Código Municipio
+- Nombre Municipio
+- Tipo: Municipio / Isla / Área no municipalizada
+- longitud
+- Latitud
+
+Tipos de datos:
+Código Departamento                                 int64
+Nombre Departamento                                object
+Código Municipio                                    int64
+Nombre Municipio                                   object
+Tipo: Municipio / Isla / Área no municipalizada    object
+longitud                                           object
+Latitud                                            object
+
+Primeras 5 filas:
+ Código Departamento Nombre Departamento  Código Municipio Nombre Municipio Tipo: Municipio / Isla / Área no municipalizada   longitud  Latitud
+                   5           ANTIOQUIA              5001         MEDELLÍN                                       Municipio -75,581775 6,246631
+                   5           ANTIOQUIA              5002        ABEJORRAL                                       Municipio -75,428739 5,789315
+                   5           ANTIOQUIA              5004         ABRIAQUÍ                                       Municipio -76,064304 6,632282
+                   5           ANTIOQUIA              5021       ALEJANDRÍA                                       Municipio -75,141346 6,376061
+                   5           ANTIOQUIA              5030            AMAGÁ                                       Municipio -75,702188 6,038708
+
+Columnas que requieren revisión mediante diccionario:
+- Tipo: Municipio / Isla / Área no municipalizada
+
+Encabezados: se encuentran en la primera fila del archivo.
+Separador decimal/miles: se revisa según el tipo cargado; las columnas numéricas se almacenan como números.
+
+PASO 3 — DIAGNÓSTICO DE COMPLETITUD
+------------------------------------
+Nulos por columna:
+- Código Departamento: 0 (0.00%)
+- Nombre Departamento: 0 (0.00%)
+- Código Municipio: 0 (0.00%)
+- Nombre Municipio: 0 (0.00%)
+- Tipo: Municipio / Isla / Área no municipalizada: 0 (0.00%)
+- longitud: 0 (0.00%)
+- Latitud: 0 (0.00%)
+
+Departamentos únicos (Nombre Departamento): 33
+Municipios/códigos únicos (Código Municipio): 1122
+
+PASO 4 — DIAGNÓSTICO DE EXACTITUD Y VALIDEZ
+---------------------------------------------
+
+Longitud de códigos:
+Código Municipio
+4    148
+5    974
+
+PASO 5 — DIAGNÓSTICO DE CONSISTENCIA
+-------------------------------------
+5.1 Comparación con DIVIPOLA: no aplica con la estructura actual.
+5.2 Consistencia interna de nombres: no aplica o requiere regla específica.
+
+5.3 Coherencia de agregaciones: requiere estructura temporal y variable CANTIDAD.
+
+PASO 6 — DIAGNÓSTICO DE UNICIDAD
+---------------------------------
+Filas involucradas en duplicados exactos: 0
+Porcentaje: 0.00%
+Combinaciones exactas duplicadas: 0
+
+PASO 7 — DIAGNÓSTICO DE OPORTUNIDAD
+------------------------------------
+No aplica: la fuente no contiene una variable temporal utilizable.

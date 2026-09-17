@@ -1,0 +1,4 @@
+﻿Prueba,Campo,Resultado,Afectados,Porcentaje
+Códigos DANE de exactamente 5 dígitos,CODIGO DANE,2109 códigos con longitud diferente de 5,2109,100.0
+Fechas inválidas/no interpretables,FECHA HECHO,0 fechas no interpretables,0,0.0
+Fechas fuera del rango 2019–2025,FECHA HECHO,0 fechas fuera del rango,0,0.0

@@ -1,0 +1,142 @@
+======================================================================
+AUDITORÍA — CULTIVOS DE HOJA DE COCA
+======================================================================
+
+PASO 1 — DESCARGA Y REGISTRO
+Archivo: 4Detección_de_Cultivos_de_Coca_(hectáreas)_20260903.xlsx
+Ruta: C:\Users\lerf2\OneDrive\Escritorio\BI TAREA\4Detección_de_Cultivos_de_Coca_(hectáreas)_20260903.xlsx
+Fecha de auditoría/registro: 2026-09-04 12:13
+Formato: .xlsx
+Tamaño (MB): 0.04
+Filas: 319
+Columnas: 28
+
+PASO 2 — EXPLORACIÓN
+Columnas exactas:
+- CODDEPTO
+- DEPARTAMENTO
+- CODMPIO
+- MUNICIPIO
+- 2001
+- 2002
+- 2003
+- 2004
+- 2005
+- 2006
+- 2007
+- 2008
+- 2009
+- 2010
+- 2011
+- 2012
+- 2013
+- 2014
+- 2015
+- 2016
+- 2017
+- 2018
+- 2019
+- 2020
+- 2021
+- 2022
+- 2023
+- 2024
+
+Tipos:
+CODDEPTO          int64
+DEPARTAMENTO     object
+CODMPIO           int64
+MUNICIPIO        object
+2001            float64
+2002            float64
+2003            float64
+2004            float64
+2005            float64
+2006            float64
+2007            float64
+2008            float64
+2009            float64
+2010            float64
+2011            float64
+2012            float64
+2013            float64
+2014            float64
+2015            float64
+2016            float64
+2017            float64
+2018            float64
+2019            float64
+2020            float64
+2021            float64
+2022            float64
+2023            float64
+2024            float64
+Estructura temporal: formato ancho; cada año se encuentra como una columna.
+Variable de interés: hectáreas detectadas.
+La fuente no contiene una columna 2025.
+
+PASO 3 — COMPLETITUD
+- CODDEPTO: 0 (0.00%)
+- DEPARTAMENTO: 0 (0.00%)
+- CODMPIO: 0 (0.00%)
+- MUNICIPIO: 0 (0.00%)
+- 2001: 155 (48.59%)
+- 2002: 151 (47.34%)
+- 2003: 130 (40.75%)
+- 2004: 129 (40.44%)
+- 2005: 129 (40.44%)
+- 2006: 120 (37.62%)
+- 2007: 124 (38.87%)
+- 2008: 113 (35.42%)
+- 2009: 102 (31.97%)
+- 2010: 112 (35.11%)
+- 2011: 114 (35.74%)
+- 2012: 107 (33.54%)
+- 2013: 116 (36.36%)
+- 2014: 115 (36.05%)
+- 2015: 127 (39.81%)
+- 2016: 136 (42.63%)
+- 2017: 133 (41.69%)
+- 2018: 132 (41.38%)
+- 2019: 143 (44.83%)
+- 2020: 147 (46.08%)
+- 2021: 138 (43.26%)
+- 2022: 134 (42.01%)
+- 2023: 138 (43.26%)
+- 2024: 139 (43.57%)
+Años requeridos por el taller: 2019–2025
+Años disponibles: [2019, 2020, 2021, 2022, 2023, 2024]
+Años faltantes: [2025]
+
+PASO 4 — EXACTITUD Y VALIDEZ
+2019: negativos=0, no numéricos=0, máximo=19892.71
+2020: negativos=0, no numéricos=0, máximo=19333.88
+2021: negativos=0, no numéricos=0, máximo=22229.6
+2022: negativos=0, no numéricos=0, máximo=22081.53
+2023: negativos=0, no numéricos=0, máximo=23029.68
+2024: negativos=0, no numéricos=0, máximo=31300.41
+Códigos municipales no encontrados en DIVIPOLA: 1
+Duplicidad de códigos municipales: 0
+
+PASO 5 — CONSISTENCIA
+Códigos no encontrados en DIVIPOLA: 1
+Registros con diferencia de denominación: 53 (16.61%)
+La fuente usa estructura anual ancha; la coherencia anual se revisa directamente por columna.
+Total hectáreas 2019: 154475.65
+Total hectáreas 2020: 142783.97
+Total hectáreas 2021: 204257.22
+Total hectáreas 2022: 230027.62
+Total hectáreas 2023: 252571.74
+Total hectáreas 2024: 261386.17
+
+PASO 6 — UNICIDAD
+Filas involucradas en duplicados exactos: 0
+Porcentaje: 0.00%
+Duplicados lógicos no se calculan como municipio-fecha-cantidad porque la fuente no tiene fecha/registro largo; cada año es una columna.
+
+PASO 7 — OPORTUNIDAD
+Último año disponible: 2024
+2025 disponible: NO
+Impacto: no es posible construir directamente el componente 2025 del índice con esta versión de la fuente.
+Tratamiento propuesto: documentar el faltante; buscar/publicar una versión oficial 2025 antes de cerrar el índice. No imputar 2025 como cero.
+Frecuencia/actualización: debe documentarse con la publicación oficial de SIMCI/UNODC; el archivo auditado no contiene esa metadata.

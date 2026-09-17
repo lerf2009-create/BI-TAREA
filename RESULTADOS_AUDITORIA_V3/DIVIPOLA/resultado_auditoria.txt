@@ -1,0 +1,74 @@
+======================================================================
+AUDITORÍA — DIVIPOLA
+======================================================================
+
+PASO 1 — DESCARGA Y REGISTRO
+Archivo: 5DIVIPOLA-_Códigos_municipios_20260903vf.xlsx
+Ruta: C:\Users\lerf2\OneDrive\Escritorio\BI TAREA\5DIVIPOLA-_Códigos_municipios_20260903vf.xlsx
+Fecha de auditoría/registro: 2026-09-04 12:13
+Formato: .xlsx
+Tamaño (MB): 0.07
+Filas antes de modificación: 1122
+Columnas: 7
+
+PASO 2 — EXPLORACIÓN
+Columnas exactas:
+- Código Departamento
+- Nombre Departamento
+- Código Municipio
+- Nombre Municipio
+- Tipo: Municipio / Isla / Área no municipalizada
+- longitud
+- Latitud
+
+Tipos:
+Código Departamento                                 int64
+Nombre Departamento                                object
+Código Municipio                                    int64
+Nombre Municipio                                   object
+Tipo: Municipio / Isla / Área no municipalizada    object
+longitud                                           object
+Latitud                                            object
+
+Observación: longitud y Latitud están almacenadas como texto y usan coma decimal.
+La fuente no contiene una columna explícita de región.
+
+PASO 3 — COMPLETITUD
+- Código Departamento: 0 (0.00%)
+- Nombre Departamento: 0 (0.00%)
+- Código Municipio: 0 (0.00%)
+- Nombre Municipio: 0 (0.00%)
+- Tipo: Municipio / Isla / Área no municipalizada: 0 (0.00%)
+- longitud: 0 (0.00%)
+- Latitud: 0 (0.00%)
+Departamentos únicos: 33
+Códigos municipales únicos: 1122
+
+PASO 4 — EXACTITUD Y VALIDEZ
+Longitud de códigos almacenados:
+Código Municipio
+4    148
+5    974
+Códigos municipales no válidos como 5 dígitos tras zfill: 1122
+Códigos municipales duplicados: 0
+Duplicados de nombre+departamento: 0
+Municipios cuyo prefijo departamental no coincide con Código Departamento: 0
+Longitudes no interpretables: 0
+Latitudes no interpretables: 0
+Longitudes fuera de [-180,180]: 0
+Latitudes fuera de [-90,90]: 0
+
+PASO 5 — CONSISTENCIA
+Filas: 1122; códigos municipales únicos: 1122
+Correspondencia código departamento-prefijo municipal: 1122 de 1122
+No se evalúan agregaciones anuales porque DIVIPOLA no es una serie de hechos.
+No se identifica región en las columnas de la fuente; requiere fuente/regla adicional si el índice la necesita.
+
+PASO 6 — UNICIDAD
+Filas involucradas en duplicados exactos: 0
+Combinaciones de código municipal repetidas: 0
+
+PASO 7 — OPORTUNIDAD
+No existe fecha de hecho ni periodo temporal en el archivo.
+Se evalúa como catálogo territorial: la fuente debe tratarse según su vigencia/versionado 2025.
+El archivo auditado no contiene una columna que permita medir rezago mensual.

@@ -1,0 +1,130 @@
+======================================================================
+AUDITORÍA — Secuestro
+======================================================================
+
+PASO 1 — DESCARGA Y REGISTRO DE LA FUENTE
+--------------------------------------------
+Archivo: 2SECUESTRO_20260903.xlsx
+Ruta: C:\Users\lerf2\OneDrive\Escritorio\BI TAREA\2SECUESTRO_20260903.xlsx
+Fecha de auditoría/registro: 2026-09-04 12:07
+Formato: .xlsx
+Tamaño (MB): 0.07
+Filas antes de modificaciones: 1911
+Columnas: 7
+
+PASO 2 — EXPLORACIÓN INICIAL DE LA ESTRUCTURA
+-----------------------------------------------
+Columnas exactas:
+- FECHA HECHO
+- COD_DEPTO
+- DEPARTAMENTO
+- COD_MUNI
+- MUNICIPIO
+- TIPO DELITO
+- CANTIDAD
+
+Tipos de datos:
+FECHA HECHO     datetime64[ns]
+COD_DEPTO                int64
+DEPARTAMENTO            object
+COD_MUNI                 int64
+MUNICIPIO               object
+TIPO DELITO             object
+CANTIDAD                 int64
+
+Primeras 5 filas:
+FECHA HECHO  COD_DEPTO       DEPARTAMENTO  COD_MUNI         MUNICIPIO                       TIPO DELITO  CANTIDAD
+ 2019-01-04         54 NORTE DE SANTANDER     54874 VILLA DEL ROSARIO    ARTICULO 168. SECUESTRO SIMPLE         1
+ 2019-01-07         54 NORTE DE SANTANDER     54874 VILLA DEL ROSARIO    ARTICULO 168. SECUESTRO SIMPLE         1
+ 2019-01-07         81             ARAUCA     81794              TAME    ARTICULO 168. SECUESTRO SIMPLE         1
+ 2019-01-10         20              CESAR     20228          CURUMANI ARTICULO 169. SECUESTRO EXTORSIVO         1
+ 2019-01-11         54 NORTE DE SANTANDER     54344            HACARI    ARTICULO 168. SECUESTRO SIMPLE         1
+
+Columnas que requieren revisión mediante diccionario:
+- COD_DEPTO
+- COD_MUNI
+- TIPO DELITO
+
+Encabezados: se encuentran en la primera fila del archivo.
+Separador decimal/miles: se revisa según el tipo cargado; las columnas numéricas se almacenan como números.
+
+PASO 3 — DIAGNÓSTICO DE COMPLETITUD
+------------------------------------
+Nulos por columna:
+- FECHA HECHO: 0 (0.00%)
+- COD_DEPTO: 0 (0.00%)
+- DEPARTAMENTO: 0 (0.00%)
+- COD_MUNI: 0 (0.00%)
+- MUNICIPIO: 0 (0.00%)
+- TIPO DELITO: 0 (0.00%)
+- CANTIDAD: 0 (0.00%)
+
+Columna de fecha: FECHA HECHO
+Fechas no interpretables: 0
+Años disponibles: [2019, 2020, 2021, 2022, 2023, 2024, 2025]
+Meses disponibles por año:
+- 2019: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+- 2020: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+- 2021: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+- 2022: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+- 2023: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+- 2024: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+- 2025: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+
+Departamentos únicos (DEPARTAMENTO): 31
+Municipios/códigos únicos (COD_MUNI): 347
+
+PASO 4 — DIAGNÓSTICO DE EXACTITUD Y VALIDEZ
+---------------------------------------------
+Valores negativos en CANTIDAD: 0
+Máximo en CANTIDAD: 28
+Fechas no interpretables: 0
+Fecha mínima: 2019-01-04 00:00:00
+Fecha máxima: 2025-12-27 00:00:00
+Fechas fuera de 2019–2025: 0
+
+Longitud de códigos:
+COD_MUNI
+4     287
+5    1624
+
+PASO 5 — DIAGNÓSTICO DE CONSISTENCIA
+-------------------------------------
+5.1 Comparación con DIVIPOLA: no aplica con la estructura actual.
+5.2 Consistencia interna de nombres: no aplica o requiere regla específica.
+
+5.3 Coherencia de agregaciones:
+Diferencias año-departamento: 0
+Diferencias año-municipio: 0
+
+PASO 6 — DIAGNÓSTICO DE UNICIDAD
+---------------------------------
+Filas involucradas en duplicados exactos: 798
+Porcentaje: 41.76%
+Combinaciones exactas duplicadas: 305
+Filas involucradas en duplicados lógicos: 803
+Porcentaje: 42.02%
+Combinaciones lógicas duplicadas: 307
+Cantidad total: 2059
+Cantidad en filas duplicadas exactas: 817
+Porcentaje sobre el total: 39.68%
+
+PASO 7 — DIAGNÓSTICO DE OPORTUNIDAD
+------------------------------------
+Primera fecha disponible: 2019-01-04 00:00:00
+Última fecha disponible: 2025-12-27 00:00:00
+Fecha de auditoría: 2026-09-04
+Rezago aproximado: 9 meses
+2025 disponible: True
+Frecuencia documentada para estas fuentes de Estadística Delictiva: mensual.
+
+5.1 — CONSISTENCIA CON DIVIPOLA
+Códigos municipales no encontrados en DIVIPOLA: 0
+Registros con diferencia de denominación: 261
+Porcentaje: 13.66%
+Denominaciones diferentes por código:
+_COD5        MUNICIPIO   Nombre Municipio
+11001      BOGOTA D.C.       BOGOTÁ, D.C.
+19760 SOTARA PAISPAMBA SOTARÁ - PAISPAMBA
+54001           CUCUTA SAN JOSÉ DE CÚCUTA
+76001             CALI   SANTIAGO DE CALI

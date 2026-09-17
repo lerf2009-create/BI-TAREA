@@ -1,0 +1,126 @@
+======================================================================
+AUDITORÍA — Extorsion
+======================================================================
+
+PASO 1 — DESCARGA Y REGISTRO DE LA FUENTE
+--------------------------------------------
+Archivo: 3EXTORSIÓN_20260904.xlsx
+Ruta: C:\Users\lerf2\OneDrive\Escritorio\BI TAREA\3EXTORSIÓN_20260904.xlsx
+Fecha de auditoría/registro: 2026-09-04 12:07
+Formato: .xlsx
+Tamaño (MB): 2.17
+Filas antes de modificaciones: 72955
+Columnas: 6
+
+PASO 2 — EXPLORACIÓN INICIAL DE LA ESTRUCTURA
+-----------------------------------------------
+Columnas exactas:
+- FECHA HECHO
+- COD_DEPTO
+- DEPARTAMENTO
+- COD_MUNI
+- MUNICIPIO
+- CANTIDAD
+
+Tipos de datos:
+FECHA HECHO     datetime64[ns]
+COD_DEPTO                int64
+DEPARTAMENTO            object
+COD_MUNI                 int64
+MUNICIPIO               object
+CANTIDAD                 int64
+
+Primeras 5 filas:
+FECHA HECHO  COD_DEPTO DEPARTAMENTO  COD_MUNI MUNICIPIO  CANTIDAD
+ 2019-01-02          5    ANTIOQUIA      5154  CAUCASIA         1
+ 2019-01-02          5    ANTIOQUIA      5088     BELLO         1
+ 2019-01-02         27        CHOCO     27001    QUIBDO         1
+ 2019-01-02         52       NARIÑO     52678 SAMANIEGO         1
+ 2019-01-02          5    ANTIOQUIA      5887   YARUMAL         1
+
+Columnas que requieren revisión mediante diccionario:
+- COD_DEPTO
+- COD_MUNI
+
+Encabezados: se encuentran en la primera fila del archivo.
+Separador decimal/miles: se revisa según el tipo cargado; las columnas numéricas se almacenan como números.
+
+PASO 3 — DIAGNÓSTICO DE COMPLETITUD
+------------------------------------
+Nulos por columna:
+- FECHA HECHO: 0 (0.00%)
+- COD_DEPTO: 0 (0.00%)
+- DEPARTAMENTO: 0 (0.00%)
+- COD_MUNI: 0 (0.00%)
+- MUNICIPIO: 0 (0.00%)
+- CANTIDAD: 0 (0.00%)
+
+Columna de fecha: FECHA HECHO
+Fechas no interpretables: 0
+Años disponibles: [2019, 2020, 2021, 2022, 2023, 2024, 2025]
+Meses disponibles por año:
+- 2019: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+- 2020: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+- 2021: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+- 2022: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+- 2023: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+- 2024: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+- 2025: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+
+Departamentos únicos (DEPARTAMENTO): 33
+Municipios/códigos únicos (COD_MUNI): 1053
+
+PASO 4 — DIAGNÓSTICO DE EXACTITUD Y VALIDEZ
+---------------------------------------------
+Valores negativos en CANTIDAD: 0
+Máximo en CANTIDAD: 1
+Fechas no interpretables: 0
+Fecha mínima: 2019-01-02 00:00:00
+Fecha máxima: 2025-12-31 00:00:00
+Fechas fuera de 2019–2025: 0
+
+Longitud de códigos:
+COD_MUNI
+4    17215
+5    55740
+
+PASO 5 — DIAGNÓSTICO DE CONSISTENCIA
+-------------------------------------
+5.1 Comparación con DIVIPOLA: no aplica con la estructura actual.
+5.2 Consistencia interna de nombres: no aplica o requiere regla específica.
+
+5.3 Coherencia de agregaciones:
+Diferencias año-departamento: 0
+Diferencias año-municipio: 0
+
+PASO 6 — DIAGNÓSTICO DE UNICIDAD
+---------------------------------
+Filas involucradas en duplicados exactos: 31819
+Porcentaje: 43.61%
+Combinaciones exactas duplicadas: 9899
+Filas involucradas en duplicados lógicos: 31819
+Porcentaje: 43.61%
+Combinaciones lógicas duplicadas: 9899
+Cantidad total: 72955
+Cantidad en filas duplicadas exactas: 31819
+Porcentaje sobre el total: 43.61%
+
+PASO 7 — DIAGNÓSTICO DE OPORTUNIDAD
+------------------------------------
+Primera fecha disponible: 2019-01-02 00:00:00
+Última fecha disponible: 2025-12-31 00:00:00
+Fecha de auditoría: 2026-09-04
+Rezago aproximado: 9 meses
+2025 disponible: True
+Frecuencia documentada para estas fuentes de Estadística Delictiva: mensual.
+
+5.1 — CONSISTENCIA CON DIVIPOLA
+Códigos municipales no encontrados en DIVIPOLA: 0
+Registros con diferencia de denominación: 16884
+Porcentaje: 23.14%
+Denominaciones diferentes por código:
+_COD5        MUNICIPIO   Nombre Municipio
+76001             CALI   SANTIAGO DE CALI
+11001      BOGOTA D.C.       BOGOTÁ, D.C.
+54001           CUCUTA SAN JOSÉ DE CÚCUTA
+19760 SOTARA PAISPAMBA SOTARÁ - PAISPAMBA

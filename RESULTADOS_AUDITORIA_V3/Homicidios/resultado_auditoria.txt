@@ -1,0 +1,123 @@
+======================================================================
+AUDITORÍA — Homicidios
+======================================================================
+
+PASO 1 — DESCARGA Y REGISTRO
+Archivo: 7HOMICIDIO_20260903 (1).xlsx
+Ruta: C:\Users\lerf2\OneDrive\Escritorio\BI TAREA\7HOMICIDIO_20260903 (1).xlsx
+Fecha de auditoría/registro: 2026-09-04 12:13
+Formato: .xlsx
+Tamaño (MB): 4.72
+Filas antes de modificación: 92636
+Columnas: 11
+
+PASO 2 — EXPLORACIÓN
+Columnas exactas:
+- FECHA HECHO
+- COD_DEPTO
+- DEPARTAMENTO
+- COD_MUNI
+- MUNICIPIO
+- ZONA
+- SEXO
+- ARMA MEDIO
+-  MODALIDAD PRESUNTA
+- SPOA_CARACTERIZACION
+- CANTIDAD
+
+Tipos:
+FECHA HECHO             datetime64[ns]
+COD_DEPTO                        int64
+DEPARTAMENTO                    object
+COD_MUNI                         int64
+MUNICIPIO                       object
+ZONA                            object
+SEXO                            object
+ARMA MEDIO                      object
+ MODALIDAD PRESUNTA             object
+SPOA_CARACTERIZACION            object
+CANTIDAD                         int64
+
+Primeras 5 filas:
+FECHA HECHO  COD_DEPTO DEPARTAMENTO  COD_MUNI   MUNICIPIO   ZONA      SEXO                  ARMA MEDIO      MODALIDAD PRESUNTA             SPOA_CARACTERIZACION  CANTIDAD
+ 2019-01-02         11  BOGOTA D.C.     11001 BOGOTA D.C. URBANA MASCULINO                CONTUNDENTES          POR ESTABLECER HOMICIDIO INTENCIONAL O CON DOLO         1
+ 2019-01-02         13      BOLIVAR     13052      ARJONA  RURAL MASCULINO               ARMA DE FUEGO                   RIÑAS HOMICIDIO INTENCIONAL O CON DOLO         1
+ 2019-01-02         13      BOLIVAR     13430    MAGANGUE  RURAL  FEMENINO ARMA BLANCA / CORTOPUNZANTE VIOLENCIA INTRAFAMILIAR                      FEMINICIDIO         1
+ 2019-01-02         17       CALDAS     17174   CHINCHINA URBANA MASCULINO               ARMA DE FUEGO               SICARIATO HOMICIDIO INTENCIONAL O CON DOLO         1
+ 2019-01-02         17       CALDAS     17174   CHINCHINA URBANA MASCULINO               ARMA DE FUEGO                   RIÑAS HOMICIDIO INTENCIONAL O CON DOLO         1
+
+Variables que requieren diccionario:
+- COD_DEPTO
+- COD_MUNI
+- ARMA MEDIO
+-  MODALIDAD PRESUNTA
+- SPOA_CARACTERIZACION
+Encabezados: primera fila.
+
+PASO 3 — COMPLETITUD
+- FECHA HECHO: 0 (0.00%)
+- COD_DEPTO: 0 (0.00%)
+- DEPARTAMENTO: 0 (0.00%)
+- COD_MUNI: 0 (0.00%)
+- MUNICIPIO: 0 (0.00%)
+- ZONA: 0 (0.00%)
+- SEXO: 0 (0.00%)
+- ARMA MEDIO: 0 (0.00%)
+-  MODALIDAD PRESUNTA: 0 (0.00%)
+- SPOA_CARACTERIZACION: 0 (0.00%)
+- CANTIDAD: 0 (0.00%)
+Fechas no interpretables: 0
+Años: [np.int32(2019), np.int32(2020), np.int32(2021), np.int32(2022), np.int32(2023), np.int32(2024), np.int32(2025)]
+- 2019: [np.int32(1), np.int32(2), np.int32(3), np.int32(4), np.int32(5), np.int32(6), np.int32(7), np.int32(8), np.int32(9), np.int32(10), np.int32(11), np.int32(12)]
+- 2020: [np.int32(1), np.int32(2), np.int32(3), np.int32(4), np.int32(5), np.int32(6), np.int32(7), np.int32(8), np.int32(9), np.int32(10), np.int32(11), np.int32(12)]
+- 2021: [np.int32(1), np.int32(2), np.int32(3), np.int32(4), np.int32(5), np.int32(6), np.int32(7), np.int32(8), np.int32(9), np.int32(10), np.int32(11), np.int32(12)]
+- 2022: [np.int32(1), np.int32(2), np.int32(3), np.int32(4), np.int32(5), np.int32(6), np.int32(7), np.int32(8), np.int32(9), np.int32(10), np.int32(11), np.int32(12)]
+- 2023: [np.int32(1), np.int32(2), np.int32(3), np.int32(4), np.int32(5), np.int32(6), np.int32(7), np.int32(8), np.int32(9), np.int32(10), np.int32(11), np.int32(12)]
+- 2024: [np.int32(1), np.int32(2), np.int32(3), np.int32(4), np.int32(5), np.int32(6), np.int32(7), np.int32(8), np.int32(9), np.int32(10), np.int32(11), np.int32(12)]
+- 2025: [np.int32(1), np.int32(2), np.int32(3), np.int32(4), np.int32(5), np.int32(6), np.int32(7), np.int32(8), np.int32(9), np.int32(10), np.int32(11), np.int32(12)]
+Departamentos únicos: 33
+Municipios/códigos únicos: 1049
+
+PASO 4 — EXACTITUD Y VALIDEZ
+Valores negativos en CANTIDAD: 0
+Valores no numéricos en CANTIDAD: 0
+Máximo CANTIDAD: 10
+Fecha mínima: 2019-01-02 00:00:00
+Fecha máxima: 2025-12-31 00:00:00
+Fechas fuera de 2019–2025: 0
+Longitud de código almacenado:
+COD_MUNI
+4    18431
+5    74205
+Códigos municipales no encontrados en DIVIPOLA: 0
+
+PASO 5 — CONSISTENCIA
+Códigos no encontrados en DIVIPOLA: 0
+Registros con diferencia de denominación: 16952 (18.30%)
+Diferencias de denominación por código:
+_COD5        MUNICIPIO   Nombre Municipio
+11001      BOGOTA D.C.       BOGOTÁ, D.C.
+54001           CUCUTA SAN JOSÉ DE CÚCUTA
+76001             CALI   SANTIAGO DE CALI
+19760 SOTARA PAISPAMBA SOTARÁ - PAISPAMBA
+Códigos con más de un nombre dentro de la fuente: 0
+Diferencias año-departamento: 0
+Diferencias año-municipio/código: 0
+
+PASO 6 — UNICIDAD
+Filas involucradas en duplicados exactos: 22121
+Porcentaje: 23.88%
+Combinaciones exactas duplicadas: 9269
+Filas involucradas en duplicados lógicos: 37292
+Porcentaje: 40.26%
+Combinaciones lógicas duplicadas: 13736
+Cantidad total: 92776
+Cantidad en filas duplicadas exactas: 22139
+Porcentaje de cantidad: 23.86%
+
+PASO 7 — OPORTUNIDAD
+Primera fecha: 2019-01-02 00:00:00
+Última fecha: 2025-12-31 00:00:00
+Rezago aproximado: 9 meses
+2025 disponible: True
+Frecuencia documentada: mensual para Estadística Delictiva.

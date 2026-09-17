@@ -1,0 +1,7 @@
+﻿Columna,Tipo físico,Tipo según Python,Valores únicos,Nulos
+FECHA HECHO,datetime64[ns],fecha,2556,0
+COD_DEPTO,int64,número,33,0
+DEPARTAMENTO,object,texto,33,0
+COD_MUNI,int64,número,1053,0
+MUNICIPIO,object,texto,978,0
+CANTIDAD,int64,número,1,0
